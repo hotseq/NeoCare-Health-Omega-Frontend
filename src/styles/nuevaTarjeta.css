@@ -1,0 +1,27 @@
+.nueva-tarjeta-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 500px;
+}
+
+/* Label e input en la misma línea */
+.nueva-tarjeta-form label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Texto del label */
+.nueva-tarjeta-form label span {
+  min-width: 120px;
+  font-weight: 500;
+}
+
+/* Inputs ocupan el resto de la línea */
+.nueva-tarjeta-form input,
+.nueva-tarjeta-form textarea {
+  flex: 1;
+  padding: 8px;
+  font-size: 14px;
+}

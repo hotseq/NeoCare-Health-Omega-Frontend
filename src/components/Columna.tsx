@@ -1,6 +1,5 @@
 import type { Card } from "../types/card";
 import Tarjeta from "./Tarjeta";
-import { formatDate } from "../utils/date";
 import { useDroppable } from "@dnd-kit/core";
 
 
@@ -37,7 +36,7 @@ export default function Columna({ title, cards, onCardClick, columnId }: ColumnP
       {cards.map((card) => (
         <Tarjeta
           key={card.id}
-          id={card.id}
+          id={String(card.id)} 
           title={card.title}
           due_date={card.due_date}
           onClick={() => onCardClick(card)}
